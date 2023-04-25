@@ -4,13 +4,38 @@
 }
 
 .main {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header {
+    min-height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.gallery {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .image {
-    height:70%;
+    width:300px;
+    margin: 15px;
+    box-shadow: 0px 0px 10px black;
+    transition: all .3s linear;
+}
+
+.image:hover {
+    width: 330px;
+    margin: 0px;
 }
